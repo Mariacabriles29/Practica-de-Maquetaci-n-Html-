@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       p{ 
+        color: salmon;
+       }
+       
+       /* Pseudoclases hover -- mouse por encima.. funcion ala pasar el ouse
+       por encima va cambiar de color */
+       p:hover{
+        color:skyblue
+
+       }
+       /* Esto quiere decir que el hijo numero 2 va tener las clases
+       que le asignemos dentro del div p:nth-child(2)    */
+       div p:nth-child(2) {
+        color:violet ;
+
+       }
+      
+        /* pseudoelementos p:: */
+        p::first-letter{
+        color: teal;
+       }
+        p::before{
+        content:"⏩";
+       }
+       p::after{
+        content:"😆"
+       }
+       ::placeholder{
+        color: tomato;
+       }
+    </style>
+</head>
+<body>
+   <p>Hola</p>
+   <div>
+    <p>Platzi</p>
+    <p>Master</p>
+    <p>Lo mejor</p>
+   </div> 
+   <div>
+    <input type="text" placeholder="name">
+   </div>
+</body>
+</html>
